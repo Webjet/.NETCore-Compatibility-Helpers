@@ -17,7 +17,11 @@ namespace Handy.DotNETCoreCompatibility.StandardLibrary
             {
                 return t.GetTypeInfo();
             }
-        
+        public static Assembly GetExecutingAssembly(Type currentType)
+        {
+            return currentType.GetTypeInfo().Assembly;
+            //System.Reflection.Assembly.GetExecutingAssembly();
+        }
 #else
 
 
