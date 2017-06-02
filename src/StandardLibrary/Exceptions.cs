@@ -63,7 +63,7 @@ namespace Handy.DotNETCoreCompatibility.StandardLibrary
         {
         }
     }
-#else
+#else //#elif NET461
     public class ApplicationException: System.ApplicationException
     {}
 #endif
